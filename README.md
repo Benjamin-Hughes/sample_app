@@ -1,24 +1,34 @@
-# README
+# Ruby on Rails Tutorial sample application
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+This is a sample application based on the application from Michael Hartl's
+[*Ruby on Rails Tutorial*](http://railstutorial.org/) with some slight modifications:
 
-Things you may want to cover:
+- Uses rspec instead of minitest for testing
+- Uses postgresql for all databases, not just production
 
-* Ruby version
+## Getting started
 
-* System dependencies
+To get started, clone the repo and then install the needed gems:
 
-* Configuration
+```
+$ bundle install --without production
+```
 
-* Database creation
+Next, migrate the database:
 
-* Database initialization
+```
+$ bin/rails db:migrate
+```
 
-* How to run the test suite
+Finally, run rspec to verify that everything is working correctly:
 
-* Services (job queues, cache servers, search engines, etc.)
+```
+$ bundle exec rspec
+```
 
-* Deployment instructions
+You can take a look at the application by running:
 
-* ...
+```
+$ bin/rails server
+```
+(browse to localhost:3000 to view the site)
