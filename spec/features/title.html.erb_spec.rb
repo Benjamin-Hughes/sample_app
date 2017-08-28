@@ -8,17 +8,17 @@ RSpec.describe "page title test", type: :feature do
   end
 
   it "displays the correct title in the title bar for the help page" do
-    visit 'static_pages/help'
+    visit help_path
     expect(page).to have_title "Help | #{@base_title}"
   end
 
   it "displays the correct title in the title bar for the about page" do
-    visit 'static_pages/about'
+    visit about_path
     expect(page).to have_title "About | #{@base_title}"
   end
 
   it "displays the correct title in the title bar for the home page" do
-    visit 'static_pages/home'
+    visit root_path
     expect(page).to have_title "Home | #{@base_title}"
   end
 end
