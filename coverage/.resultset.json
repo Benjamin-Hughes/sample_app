@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 {
   "RSpec": {
     "coverage": {
@@ -439,7 +438,7 @@
         1,
         null,
         1,
-        7,
+        8,
         null,
         null,
         1,
@@ -482,17 +481,22 @@
         null,
         null,
         null,
-        null,
-        null,
+        1,
+        1,
+        1,
+        1,
+        1,
         null,
         null,
         null
       ],
       "/Users/ben/Projects/sample_app/app/models/user.rb": [
         1,
+        2,
         1,
         1,
         1,
+        null,
         null,
         null
       ],
@@ -523,8 +527,6 @@
         null
       ]
     },
-    "timestamp": 1504387519
+    "timestamp": 1504395935
   }
 }
-=======
->>>>>>> 1e5682a5bc26cc2a8d450d2a05a15337fd864c5e

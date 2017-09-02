@@ -49,23 +49,11 @@ RSpec.describe User, type: :model do
       end
     end
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> 1e5682a5bc26cc2a8d450d2a05a15337fd864c5e
     it "email addresses should be unique" do
       duplicate_user = @user.dup
       duplicate_user.email = @user.email.upcase
       @user.save
       expect(duplicate_user).to_not be_valid
     end
-<<<<<<< HEAD
-
-=======
->>>>>>> master
-
-
-=======
->>>>>>> 1e5682a5bc26cc2a8d450d2a05a15337fd864c5e
   end
 end
