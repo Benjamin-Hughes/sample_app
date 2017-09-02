@@ -10,7 +10,11 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
+<<<<<<< HEAD
 ActiveRecord::Schema.define(version: 20170902220144) do
+=======
+ActiveRecord::Schema.define(version: 20170902190557) do
+>>>>>>> master
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -20,7 +24,10 @@ ActiveRecord::Schema.define(version: 20170902220144) do
     t.string "email"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+<<<<<<< HEAD
     t.index ["email"], name: "index_users_on_email", unique: true
+=======
+>>>>>>> master
   end
 
 end
