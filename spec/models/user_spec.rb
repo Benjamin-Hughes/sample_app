@@ -55,9 +55,5 @@ RSpec.describe User, type: :model do
       @user.save
       expect(duplicate_user).to_not be_valid
     end
-
-
-
   end
-
 end
