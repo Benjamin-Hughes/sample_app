@@ -6,7 +6,8 @@ RSpec.describe User, type: :model do
   describe "user model validations" do
 
     before :each do
-      @user = User.new(name: "Example User", email: "user@example.com")
+      @user = User.new(name: "Example User", email: "user@example.com",
+                      password: "foobar", password_confirmation: "foobar")
     end
 
     it "test user should be vaild" do
@@ -54,6 +55,16 @@ RSpec.describe User, type: :model do
       duplicate_user.email = @user.email.upcase
       @user.save
       expect(duplicate_user).to_not be_valid
+    end
+
+    it "password should be present (nonblank)" do
+      @user.password = @user.password_confirmation = " " * 6
+      expect(@user).to_not be_valid
+    end
+
+    it "password should have a minimum length" do
+      @user.password = @user.password_confirmation = "a" * 5
+      expect(@user).to_not be_valid
     end
   end
 end
